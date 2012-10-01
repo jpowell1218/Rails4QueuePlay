@@ -1,4 +1,6 @@
 GuitarsUnlimited::Application.routes.draw do
+  resources :guitars
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
