@@ -43,7 +43,7 @@ class GuitarsController < ApplicationController
     @guitar = Guitar.new(guitar_params)
 
     respond_to do |format|
-      if @guitar.save
+      if @guitar.register
         format.html { redirect_to @guitar, notice: 'Guitar was successfully created.' }
         format.json { render json: @guitar, status: :created, location: @guitar }
       else
